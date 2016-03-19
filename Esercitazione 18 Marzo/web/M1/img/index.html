@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Registrazione esami Triennale e Magistrale</h1>
+        <img src="img/DSC_0184.JPG" title="SanPietro"
+             width="230" height="153">
+        <form method="GET">
+            <!-- Nome, cognome, matricola studente -->
+            <div>   
+            <label for="NomeStudente">Nome Studente</label>
+            <input type="text" name="NomeStudente" id="NomeStudente">
+            <label for="CognomeStudente">Cognome Studente</label>
+            <input type="text" name="CognomeStudente" id="CognomeStudente">
+            <label for="MatricolaStudente">Matricola Studente</label>
+            <input type="number" name="MatricolaStudente" id="MatricolaStudente">
+            </div>
+            <!-- Nome esame e voto -->
+            <div>
+            <select size="3" name="NomeEsame" id="NomeEsame">
+                <option value="PR1">Programmazione1</option>
+                <option value="AMM">Amministrazione di Sistema</option>
+                <option value="CSS">Corso Senza Senso</option>
+                <option value="RMT">Riguardo Molto Triathlon</option>
+            </select>
+            <label for="VotoEsame">VotoEsame</label>
+            <input type="range" min="18" max="31" name="VotoEsame" id="VotoEsame" />
+            </div>
+        <!-- Descrizione -->
+        <div>
+            <label for="Descrizione">Descrizione</label>
+            <textarea name="Descrizione" id="Descrizione" rows="10" cols="40">Descrizione Esame</textarea>
+        </div>
+        <!-- Submit e reset -->
+        <div>
+            <input type="submit" value="invia" />
+            <input type="reset" value="reimposta"/>
+        </div>
+        </form>
+    </body>
+</html>
